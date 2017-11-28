@@ -21,8 +21,8 @@ public class InsertServlet extends HttpServlet {
 		response.setContentType("text/html");
 		PrintWriter out = response.getWriter();
 		
-		String n=request.getParameter("username");
-		String p=request.getParameter("userpass");
+		String n=request.getParameter("Username");
+		String p=request.getParameter("Password");
 		System.out.println(n);
 		System.out.println(p);
 		

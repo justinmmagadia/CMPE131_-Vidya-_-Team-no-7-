@@ -18,7 +18,7 @@ public class AccountDao {
 			//root: password
 			//syntex : databaseurl/databasename, username , password
 			Connection con = DriverManager.getConnection(
-					"jdbc:mysql://localhost:3306/submit", "root", "root");
+					"jdbc:mysql://localhost:3306/test", "root", "");
 			
 			
 
@@ -27,7 +27,7 @@ public class AccountDao {
 			// actual query to execute is
 			// select * from users where username = name and password = pass
 			PreparedStatement oPrStmt = con
-					.prepareStatement("INSERT INTO account (username,password) VALUES(?,?)");// ? represents some parameter to include
+					.prepareStatement("INSERT INTO login (Username,Password) VALUES(?,?)");// ? represents some parameter to include
 																							
 			oPrStmt.setString(1, theName);// parameter index start from 1
 			oPrStmt.setString(2, thePass);

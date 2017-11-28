@@ -1,0 +1,74 @@
+html {
+    background: #000000;
+    background-image: linear-gradient(270deg, rgb(25, 25, 25) 100%, rgb(25, 25, 25) 100%);
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    background: #000000;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+    color: #FFFFFF;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 2em 2em 4em;
+}
+
+@keyframes colorize {
+    0% {
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+    }
+    100% {
+        -webkit-filter: grayscale(0%);
+        filter: grayscale(0%);
+    }
+}
+
+ul {
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333; 
+}
+
+li {
+    float: left; 
+} 
+
+li a {
+    display: block; 
+    color: white; 
+    text-align: center; 
+    padding: 14px 16px; 
+    text-decoration: none; 
+}
+
+li a:hover {
+    background-color: #111; 
+} 
+
+.active {
+    background-color: #621313;
+} 
+
+div {
+    width: 320px; 
+    padding: 100px; 
+    border: 0px solid gray; 
+    margin: 0;
+}
+
+button {
+    align-content: right; 
+    background-color: #621313;
+    color: white; 
+    padding: 10px 10px; 
+    margin: 0px 0;
+    border: 100px; 
+    cursor: arrow;
+    width: 10%; 
+}
