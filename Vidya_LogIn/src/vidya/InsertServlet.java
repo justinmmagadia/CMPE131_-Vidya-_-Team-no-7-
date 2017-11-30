@@ -20,14 +20,14 @@ public class InsertServlet extends HttpServlet {
 
 		response.setContentType("text/html");
 		PrintWriter out = response.getWriter();
+		System.out.println("Insert Servlet");
+		String user =request.getParameter("username");
+		String password =request.getParameter("userpass");
+		System.out.println(user);
+		System.out.println(password);
 		
-		String n=request.getParameter("Username");
-		String p=request.getParameter("Password");
-		System.out.println(n);
-		System.out.println(p);
 		
-		
-		if(AccountDao.save(n, p)){
+		if(AccountDao.save(user, password)){
 			RequestDispatcher rd=request.getRequestDispatcher("submitted");
 			rd.forward(request,response);
 		}

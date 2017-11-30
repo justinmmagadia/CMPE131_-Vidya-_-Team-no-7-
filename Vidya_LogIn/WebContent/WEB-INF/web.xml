@@ -32,7 +32,7 @@
   </servlet-mapping>
    <servlet-mapping>
     <servlet-name>InsertServlet</servlet-name>
-    <url-pattern>/submit</url-pattern>
+    <url-pattern>/create</url-pattern>
   </servlet-mapping>
    <servlet-mapping>
     <servlet-name>InsertedServlet</servlet-name>
@@ -41,6 +41,7 @@
  
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
+    <welcome-file>CreateAccount.html</welcome-file>
   </welcome-file-list>
   
 </web-app>

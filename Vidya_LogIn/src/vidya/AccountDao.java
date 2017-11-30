@@ -20,8 +20,7 @@ public class AccountDao {
 			Connection con = DriverManager.getConnection(
 					"jdbc:mysql://localhost:3306/test", "root", "");
 			
-			
-
+		
 			//prepared statement is used for secure access
 			// ? used for data to put in query
 			// actual query to execute is
@@ -31,6 +30,7 @@ public class AccountDao {
 																							
 			oPrStmt.setString(1, theName);// parameter index start from 1
 			oPrStmt.setString(2, thePass);
+		
 			int nInsertedRecords = oPrStmt.executeUpdate(); // executing the query and getting the updated/inserted row counts from databse
 			
 			if(nInsertedRecords>0){ // check that the data is inserted successfully or not

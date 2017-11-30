@@ -18,10 +18,10 @@ public class InsertedServlet extends HttpServlet {
 		response.setContentType("text/html");
 		PrintWriter out = response.getWriter();
 		
-		String strUsername=request.getParameter("Username");
-		String strUserpass = request.getParameter("Password");
+		String strUsername=request.getParameter("username");
+		String strUserpass = request.getParameter("userpass");
 		out.print("Username "+strUsername+" and password "+strUserpass + " is saved successfully");
-		
+		out.println("Click here to return to the login page");
 		out.close();
 	}
 

@@ -20,8 +20,10 @@ public class LoginServlet extends HttpServlet {
 		String p=request.getParameter("userpass");
 		System.out.println(p);
 		if(LoginDao.validate(n, p)){
-			RequestDispatcher rd=request.getRequestDispatcher("loggedin");
-			rd.forward(request,response);
+			//RequestDispatcher rd=request.getRequestDispatcher("loggedin");
+			//rd.forward(request,response);
+		
+			out.print("Welcome "+n);
 		}
 		else{
 			out.print("Sorry username or password error");
